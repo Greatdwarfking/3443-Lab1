@@ -1,4 +1,4 @@
-/**
+ /**
  * Lab1 is a Java class containing a main method to run your program when completed.
  * This class will not compile until you have completed the requirements outlined in 
  * the lab description.
