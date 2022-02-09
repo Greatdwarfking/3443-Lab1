@@ -20,13 +20,14 @@ public class CastMember extends Person{
 	
 	//Returns a string representation of a person p
 	public String toString() {
-		String p = getName() + " (" + getAge() + ") \n\t - " + roles[0];
+		StringBuilder sb = new StringBuilder();
 		
-		//for(int i = 1; i < numOfRoles; i++)
-		//{
-		//	p.concat(getName() + " (" + getAge() + ") \n\t - " + roles[i]);
-		//}
-		return p;
+		sb.append(getName() + " (" + getAge() + ")" + "\n");
+		for(int i = 0; i < numOfRoles; i++)
+		{
+			 sb.append("\t - " + roles[i] + "\n");
+		}
+		return  sb.toString();
 	}
 	
 	public void addRole(Role r) {

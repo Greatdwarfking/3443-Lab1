@@ -19,15 +19,17 @@ public class Show {
 	}
 	
 	public String toString() {
-		String p ="Show: " + title + "\n" + numOfCast
-				+ " cast members:";
-		//System.out.println("Show: " + title + "\n" + numOfCast
-		//		+ " cast members:");
+
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("Show: " + title + "\n" + numOfCast
+				+ " cast members:\n");
 		for(int i = 0; i < numOfCast; i++)
 		{
-			p.concat(cast[i].toString());
+			sb.append(cast[i].toString());
 		}
-		return p;
+		
+		return sb.toString();
 	}
 	
 	public void addCastMember(CastMember c) {
