@@ -18,7 +18,7 @@ public abstract class Person {
 	
 	//Returns a string representation of a person p
 	public String toString() {
-		return getName() + " (" + getAge() + ") ";
+		return getName() + " (" + getAge() + ") " ;
 	}
 	
 	// Create getters and setters for name and age
