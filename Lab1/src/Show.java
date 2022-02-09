@@ -8,8 +8,10 @@ public class Show {
 	private CastMember[] cast;
 	private String title;
 	
+	//Constructor that takes a String and and Integer
 	public Show(String title, int numOfCast) {
 		
+		//Creates new Castmember array of numOfCast
 		cast = new CastMember[numOfCast];
 		this.title = title;
 	}
