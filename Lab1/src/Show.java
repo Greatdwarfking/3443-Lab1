@@ -18,24 +18,32 @@ public class Show {
 		this.numOfCast = numOfCast;  
 	}
 	
+	//Print a String representation of a Show object
 	public String toString() {
-
+		
+		//Creates stringbulider object
 		StringBuilder sb = new StringBuilder();
 		
+		//Appends sb to include title and number of cast members
 		sb.append("Show: " + title + "\n" + numOfCast
 				+ " cast members:\n");
+		
+		//For loop that calls on cast[i].toString() and appends its output to sb
 		for(int i = 0; i < numOfCast; i++)
 		{
 			sb.append(cast[i].toString());
 		}
 		
+		//Returns sb as a string
 		return sb.toString();
 	}
 	
+	//Adds cast member to the CastMember object array
 	public void addCastMember(CastMember c) {
 		cast[count++] = c;
 	}
 	
+	//Getters and Setters for title and numOfCast variables
 	public String getTitle() {
 		return title;
 	}

@@ -3,8 +3,10 @@
  * Fall 2021
  */
 
+//Extends person class
 public class Role extends Person{
 	
+	//Constructor calls on person constructor and send name and age
 	public Role(String name, int age) {
 		super(name, age);
 	}
